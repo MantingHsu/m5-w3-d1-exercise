@@ -1,3 +1,5 @@
-import OAuth2Login from './OAuth2Login';
+import React from 'react';
+import ReactDOM from 'react-dom';
+import App from './App';
 
-export default OAuth2Login;
+ReactDOM.render(<App />, document.getElementById('root'));

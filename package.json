@@ -4,6 +4,7 @@
   "description": "A React Component for OAuth2 Login - adapted from react-github-login",
   "main": "dist/OAuth2Login.js",
   "scripts": {
+    "start": "parcel index.html",
     "build": "NODE_ENV=production webpack -p",
     "lint": "eslint src",
     "test": "jest"
@@ -16,9 +17,10 @@
     "react-oauth2-login"
   ],
   "license": "MIT",
-  "peerDependencies": {
-    "prop-types": "^15.7.2",
-    "react": "^16.0.0"
+  "dependencies": {
+    "prop-types": "^15.8.1",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1"
   },
   "devDependencies": {
     "@babel/cli": "^7.8.4",
@@ -28,24 +30,19 @@
     "autoprefixer": "^7.1.2",
     "babel-eslint": "^10.1.0",
     "babel-loader": "^8.0.6",
-    "enzyme": "^2.6.0",
+    "enzyme": "^3.11.0",
+    "enzyme-adapter-react-16": "^1.15.6",
     "eslint": "^4.2.0",
-    "eslint-config-airbnb": "^15.0.2",
+    "eslint-config-airbnb": "^15.1.0",
     "eslint-plugin-import": "^2.22.0",
-    "eslint-plugin-jsx-a11y": "^6.3.1",
+    "eslint-plugin-jsx-a11y": "^5.1.1",
     "eslint-plugin-react": "^7.1.0",
     "fbjs": "^0.8.6",
     "jest": "^25.1.0",
     "object-assign": "^4.1.0",
-    "react": "^16.0.0",
-    "react-addons-test-utils": "^15.1.0",
-    "react-css-modules": "^4.5.2",
-    "react-dom": "^16.0.0",
-    "react-test-renderer": "^15.4.1",
+    "parcel-bundler": "^1.12.5",
+    "react-test-renderer": "^16.13.1",
     "webpack": "^4.41.5",
     "webpack-cli": "^3.3.10"
-  },
-  "dependencies": {
-    "prop-types": "^15.8.1"
   }
 }
